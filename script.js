@@ -23,3 +23,27 @@ setInterval(updateImage, 10 * 1000);
 
 // Initialize the image and selectors
 updateImage();
+
+const passwordInput = document.querySelector('input[type="password"]');
+const confirmPasswordInput = document.querySelector('input[type="password"]:last-child');
+const verificationMessage = document.createElement('span');
+
+verificationMessage.classList.add('verification-message');
+confirmPasswordInput.parentNode.appendChild(verificationMessage);
+
+confirmPasswordInput.addEventListener('input', () => {
+  if (confirmPasswordInput.value === passwordInput.value) {
+    verificationMessage.textContent = 'Passwords match';
+    verificationMessage.style.color = 'green';
+    passwordInput.style.borderColor = 'green';
+    confirmPasswordInput.style.borderColor = 'green';
+    passwordInput.style.color = 'black';
+    confirmPasswordInput.style.color = 'black';
+  } else {
+    verificationMessage.style.color = 'red';
+    passwordInput.style.borderColor = 'red';
+    confirmPasswordInput.style.borderColor = 'red';
+    passwordInput.style.color = 'red';
+    confirmPasswordInput.style.color = 'red';
+  }
+});

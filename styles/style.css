@@ -1,3 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 versions
+*/
+
+/*
+* Bugs to fix:
+* Fix form validation 
+*/
+
+
 .background {
   background-image: linear-gradient(to bottom, #311e33, #452b44);
   height: 100vh;
@@ -6,7 +19,6 @@
 }
 
 .leftSide {
-  /* background-color: white; */
   color: white;
   width: 50vw;
   height: 100vh;
@@ -74,7 +86,6 @@
 }
 
 .imageSelector {
-  /* background-color: white; */
   width: 12vw;
   height: 3vh;
 
@@ -111,6 +122,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .rightSideText {
@@ -131,7 +150,7 @@ form input, form button {
 
 form .button input {
   height: 100%;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -148,11 +167,43 @@ form .button input {
 form .button input:hover {
   cursor: pointer;
 
-  background-color: rgba(203, 113, 255, 0.6);
+  background-color: rgba(162, 58, 223, 0.6);
   box-shadow: 0 12px 24px 0 rgba(29, 29, 29, 0.25),
     0 18px 40px 0 rgba(27, 27, 27, 0.15), 0 24px 48px 0 rgba(100, 100, 100, 0.1);
 }
 
-input[type="email"] {
-  width: 100%;
+
+.inputs input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+}
+
+.inputs input::placeholder {
+  color: #aaaaaa; 
+}
+
+.inputs input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  background-color: #452b44;
+}
+
+.inputs input[type="password"] {
+  font-family: 'Roboto', sans-serif;
+  background-color: #452b44;
+}
+
+.inputs input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  background-color: #452b44;
+}
+
+.inputs input:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
