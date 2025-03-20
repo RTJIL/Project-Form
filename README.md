@@ -5,4 +5,4 @@
 
 ---
 
-# [Images from](https://app.leonardo.ai/image-generation)
+# Images from [Leaonardo](https://app.leonardo.ai/image-generation)
