@@ -5,4 +5,4 @@
 
 ---
 
-# [Images from]([https://pages.github.com/](https://app.leonardo.ai/image-generation)
+# [Images from](https://app.leonardo.ai/image-generation)
